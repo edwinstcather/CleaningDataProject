@@ -1,4 +1,4 @@
-# Edwin St Catherine - Getting and Cleaning Data Assignment
+## Edwin St Catherine - Getting and Cleaning Data Assignment
 
 ## Getting and Cleaning Data Course Project Repo by Edwin St Catherine
 
