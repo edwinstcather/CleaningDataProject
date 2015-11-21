@@ -6,7 +6,7 @@ subject_train <- read.table("subject_train.txt", header = FALSE)
 ##alldata1 <- cbind.data.frame(subject_train,x_train)
 
 ## The test data is read into the test folder along with the 
-## subject related codes for the test data
+## subject related codes for the test data.
 setwd("C:/Users/Edwin/Documents/R/UCI HAR Dataset/test")
 x_test <- read.table("X_test.txt", header = FALSE)
 subject_test <- read.table("subject_test.txt", header = FALSE)
