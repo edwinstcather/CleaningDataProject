@@ -58,7 +58,7 @@ label(allData$V1) <- "Activity Label"
 label(allData$test_train) <- "Whether Testing or Training"
 
 ##select the fields with mean and std in their column names and store to a dataframe
-allMeansStd <- select(allData, (contains("mean") || contains("std")))
+allMeansStd <- allMeansStd <- cbind(select(allData, one_of("V1", "test_train")), select(allData, contains("mean")), select(allData, contains("std")))
 
 ##create second tidy data dataset as required
 Tidy2nd <- allMeansStd %>% group_by(V1, test_train) %>% summarise_each(funs(mean))
